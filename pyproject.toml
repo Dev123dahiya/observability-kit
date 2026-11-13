@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "observability-kit"
+version = "0.1.0"
+description = "Metrics, tracing, structured logs and SLO burn-rate alerts from the standard library: Prometheus exposition, W3C trace context, and multi-window error-budget alerting"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.setuptools]
+packages = ["obskit"]
